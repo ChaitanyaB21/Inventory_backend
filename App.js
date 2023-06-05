@@ -72,6 +72,6 @@ app.post("/update/:pencilBtnId", async (req, res) => {
 
 
 
-app.listen(4000, () => {
+app.listen(process.env.PORT||4000, () => {
     console.log("EveryThing Working fine on port 4000");
 })
